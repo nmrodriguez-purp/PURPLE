@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Philippine Travel Guide </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Seaweed Script">
+</head>
+<style>
+.menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        background-color: #e6e8fa;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .menu-item {
+        position: relative;
+    }
+
+    .menu a {
+        background-color: #dfc5fe;
+        color: #3b2c1f;
+        padding: 12px, 20px;
+        text-decoration: none;
+        border-radius: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        
+    }
+
+    .menu a:hover {
+        background-color: #7c0a02;
+        color: #2e211e;
+        transform: translateY(-5px);
+        box-shadow: 0 2px 2px #967bb6;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 160px;
+        background-color: #9678b6;
+        padding: 8px;
+        border-radius: 8px;
+        z-index: 10;
+    }
+
+    .menu-item:hover .submenu {
+        display: block;
+    }
+
+    .submenu a {
+        background-color: #c9a0dc;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    .submenu a:hover {
+        background-color: #c8a2c8;
+        transform: translateX(5px);
+    }
+
+</style>
+<body>
+
+<img src="phtg.png" align="center">
+<nav class="menu">
+    <a href="philippinetourguide.html">Home</a>
+<div class="menu-item">
+    <a>About</a>
+    <div class="submenu">
+        <a href="https://www.britannica.com/place/Philippines">About the Philippines</a>
+        <a href="https://www.britannica.com/place/Philippines/Cultural-life">Our Culture</a>
+    </div>
+
+    <a>Gallery</a>
+    <div class="subemnu">
+        <a href="https://ifmst.org/tourist-attractions-in-philippines/">Tourist Destinations</a>
+        <a href="">Photo Collection</a>
+    </div>
+
+    <a href="studentregistrationform.html">Contact Us</a>
+</div>
+</nav>
+</body>
+</html>
